@@ -17,13 +17,10 @@ class CustomException(Exception):
         '''
         Custom exception class to provide detailed error information.
         '''
-        # Generate a detailed error message
         detailed_message = error_message_detail(error, error_detail)
         
-        # Initialize the base class with the detailed message
         super().__init__(detailed_message)
         
-        # Store the detailed message for future reference
         self.error_message = detailed_message
 
     def __str__(self):
