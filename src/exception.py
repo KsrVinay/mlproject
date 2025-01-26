@@ -20,7 +20,7 @@ class CustomException(Exception):
         detailed_message = error_message_detail(error, error_detail)
         
         super().__init__(detailed_message)
-        
+    
         self.error_message = detailed_message
 
     def __str__(self):
