@@ -1,5 +1,5 @@
 import sys
-
+from src.logger import logging
 def error_message_detail(error, error_detail: sys):
     '''
     Extracts detailed error information, including the filename, line number, and error message.
